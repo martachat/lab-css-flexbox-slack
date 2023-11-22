@@ -375,12 +375,271 @@ html {
 }
 
 /* ===== Media Queries Section ===== */
-/* Media queries should be coded as it follows: 
-    @media (min-width: 1400px) - Extra extra large - Tablet - iPad Mini
-    @media (min-width: 1200px) and (max-width: 1399px) - Extra large - Large mobile device - iPhone 12 Pro Max
-    @media (min-width: 992px) and (max-width: 1199px) - Large - Standard mobile device - Samsung Galaxy S5
-    @media (min-width: 768px) and (max-width: 991px) - Medium - Small mobile device - iPhone SE
-    @media (min-width: 576px) and (max-width: 767px) - Small - Standard mobile device - iPhone 8
-    @media (max-width: 575px) - X-Small - Small mobile device - older smartphone
-*/
-/* Add your media query styles here... */
+
+  /* Large Screens (width > 1440px) */
+@media screen and (min-width: 1441px) {
+  /* Styles for large screens */
+}
+
+/* Medium Screens (width > 1024px and width < 1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for medium screens */
+}
+
+/* Small Screens (width > 768px and width < 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for small screens */
+}
+
+/* Mobile Screens (width < 768px) */
+@media screen and (max-width: 768px) {
+  /* Navbar adjustments */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    max-width: 72%;
+  }
+
+  .navbar-container {
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  .nav-actions {
+    flex-grow: 0;
+    justify-content: flex-end;
+  }
+
+  
+  .search-button,
+  .menu-button {
+    display: inline-block;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 10px; 
+  }
+
+  .search-button img,
+  .menu-button img {
+    display: block; 
+    width: 24px;
+    height: 24px; 
+  }
+
+.menu-button{
+  display: inline-block;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.nav-bottom-sign, .nav-bottom-link-try {
+  display: none;
+}
+
+  /* Header section adjustments */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .text-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .text-container img {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-container h1 {
+    font-size: 60px; 
+    line-height: 1.2; 
+    text-align: center; 
+    width: 500px;
+    max-width: 80%;
+  }
+
+  .text-container p {
+    font-size: 30px;
+    text-align: center;
+    max-width: 80%; 
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center stretch;
+    width: 100%; 
+    height: auto;
+  }
+
+  .email-button,
+  .google-button {
+    display: block; 
+    width: 80%; 
+    margin-bottom: 10px; 
+    padding: 15px 0;
+    font-size: 32px; 
+    border: none; 
+    border-radius: 4px; 
+    text-align: center; 
+  }
+
+  .email-button a {
+    color: #540B51; 
+  }
+
+  .google-button img {
+    width: 50px; 
+    height: auto; 
+    vertical-align: middle; 
+  }
+
+
+  /* Main content adjustments */
+  .first-section {
+    padding: 0px;
+    max-width: 85%;
+    align-items: center;
+  }
+
+  .second-section-text {
+    padding: 20px;
+    max-width: 85%;
+    align-items: center;
+  }
+
+  .second-section-text h3 {
+    padding: 2px;
+    max-width: 90%;
+    width: 85%;
+    align-items: center;
+    font-size: 50px;
+  }
+
+  .second-section-text p {
+    padding: 2px;
+    max-width: 90%;
+    width: 85%;
+    align-items: center;
+    font-size: 30px;
+  }
+
+   .third-section-text h3 {
+    padding: 2px;
+    max-width: 75%;
+    width: 65%;
+    align-items: center;
+    font-size: 45px;
+  }
+
+  .first-content-container, {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .percentages {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .percentages-item {
+    margin-bottom: 10px; 
+    width: auto;
+    height: auto;
+  }
+
+    /* First Section */
+
+  .first-section {
+    margin: 0px;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+
+  .first-content-container {
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 60px;
+  }
+
+  .first-section-text {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .first-section-logo {
+    flex-direction: row;
+    max-width: 80%;
+    flex-wrap: wrap;
+    padding: 35px;
+  }
+
+  .image-logo {
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+    /* Welcome Section */
+
+    .third-section-text {
+      margin: 10px;
+      margin-right: 90px;
+      padding: 35px;
+      padding-right: 50px;
+    }
+
+    .third-section-text h3 {
+      margin: 10px;
+      margin-right: 90px;
+      padding-right: 50px;
+      padding-left: 80px;
+      text-align: center;
+    }
+
+    .welcome-container {
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+
+  /* Footer adjustments */
+
+    .footer-section {
+      padding-right: 200px
+    }
+
+  .footer-list, .footer-social-media-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon, .footer-list-item {
+    margin-bottom: 10px;
+  }
+
+  .footer-copywright {
+    text-align: center;
+    padding: 10px;
+  }
+} 
+
