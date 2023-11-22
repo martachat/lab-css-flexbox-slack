@@ -10,18 +10,21 @@
 */
 
 /* ===== Base Styles ===== */
-html {
+
+.html, .body {
   font-size: 24px;
   background-color: #540B51;
   font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
 }
 
-.body {
-  margin: 0;
-}
 
 /* ===== Navbar Section ===== */
 .navbar {
+  background-color: #540B51;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,14 +78,12 @@ html {
   height: 1px; 
   background-color: #794D72; 
   border: none; 
+  margin: 0px;
 }
 
 .nav-bottom-links {
   display: flex;
   align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
  }
 
 .nav-bottom-sign {
@@ -112,11 +113,12 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #540B51; 
+  background-color: #540B51;
   padding-top: 50px;
   padding-left: 20px;
-  padding-right: 100px;
+  padding-right: 20px; 
   color: white;
+  box-sizing: border-box; 
 }
 
 .text-container {
@@ -124,7 +126,7 @@ html {
 }
 
 .text-container h1 {
-  font-size: 100px;
+  font-size: 60px;
 }
 
 .header-main-text p {
@@ -141,7 +143,7 @@ html {
 
 .button-container {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .email-button, .google-button {
@@ -166,7 +168,7 @@ html {
 
 .google-button {
   display: flex;
-  align-items: center; 
+  align-items: center;
   background-color: #4285F4;
 }
 
@@ -183,6 +185,17 @@ html {
   background-color: white;
 }
 
+.hero-product {
+  width: 100%; /* Cambiado de 100vw a 100% */
+  height: 50vh;
+  object-fit: cover; 
+}
+
+.hero-product img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del div */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
 .header-second-text p {
   color: #191817; 
   font-size: 16px; 
@@ -196,7 +209,6 @@ html {
    justify-content: space-evenly;
    background-color: #F3EAE2;
    padding: 48px 0px 70px 0px;
-   margin-top: 100px;
 }
 
 .first-content-container {
@@ -282,6 +294,7 @@ html {
   text-align: center; 
   padding: 5px 0; 
   margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .third-section-text h3 {
@@ -509,254 +522,20 @@ html {
 }
 
 /* Mobile Screens (width < 768px) */
+
 @media screen and (max-width: 768px) {
-  /* Navbar adjustments */
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    max-width: 72%;
-  }
 
-  .navbar-container {
-    justify-content: flex-start;
-    flex-grow: 1;
-  }
-
-  .nav-actions {
-    flex-grow: 0;
-    justify-content: flex-end;
-  }
-
-  
-  .search-button,
-  .menu-button {
-    display: inline-block;
-    background: none;
-    border: none;
-    padding: 0;
-    margin-left: 10px; 
-  }
-
-  .search-button img,
-  .menu-button img {
-    display: block; 
-    width: 24px;
-    height: 24px; 
-  }
-
-.menu-button{
-  display: inline-block;
-}
-
-.navbar-menu {
+.navbar-menu, .nav-bottom-sign, .nav-bottom-link-try {
   display: none;
 }
 
-.nav-bottom-sign, .nav-bottom-link-try {
-  display: none;
+.header-container {
+  flex-direction: column; 
+  align-items: center; 
 }
 
-  /* Header section adjustments */
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-  }
-
-  .text-container {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .text-container img {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .text-container h1 {
-    font-size: 60px; 
-    line-height: 1.2; 
-    text-align: center; 
-    width: 500px;
-    max-width: 80%;
-  }
-
-  .text-container p {
-    font-size: 30px;
-    text-align: center;
-    max-width: 80%; 
-  }
-
-  .button-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center stretch;
-    width: 100%; 
-    height: auto;
-  }
-
-  .email-button,
-  .google-button {
-    display: block; 
-    width: 80%; 
-    margin-bottom: 10px; 
-    padding: 15px 0;
-    font-size: 32px; 
-    border: none; 
-    border-radius: 4px; 
-    text-align: center; 
-  }
-
-  .email-button a {
-    color: #540B51; 
-  }
-
-  .google-button img {
-    width: 50px; 
-    height: auto; 
-    vertical-align: middle; 
-  }
 
 
-  /* Main content adjustments */
-  .first-section {
-    padding: 0px;
-    max-width: 85%;
-    align-items: center;
-  }
-
-  .second-section-text {
-    padding: 20px;
-    max-width: 85%;
-    align-items: center;
-  }
-
-  .second-section-text h3 {
-    padding: 2px;
-    max-width: 90%;
-    width: 85%;
-    align-items: center;
-    font-size: 50px;
-  }
-
-  .second-section-text p {
-    padding: 2px;
-    max-width: 90%;
-    width: 85%;
-    align-items: center;
-    font-size: 30px;
-  }
-
-   .third-section-text h3 {
-    padding: 2px;
-    max-width: 75%;
-    width: 65%;
-    align-items: center;
-    font-size: 45px;
-  }
-
-  .first-content-container, {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .percentages {
-    flex-direction: column; 
-    align-items: center;
-    text-align: center;
-  }
-
-
-  .percentages-item {
-    margin-bottom: 10px; 
-    width: auto;
-    height: auto;
-  }
-
-    /* First Section */
-
-  .first-section {
-    margin: 0px;
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 10px;
-  }
-
-  .first-content-container {
-    margin: 0px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 60px;
-  }
-
-  .first-section-text {
-    font-size: 22px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .first-section-logo {
-    flex-direction: row;
-    max-width: 80%;
-    flex-wrap: wrap;
-    padding: 35px;
-  }
-
-  .image-logo {
-    margin-bottom: 10px;
-    width: 100%;
-    height: auto;
-  }
-
-    /* Welcome Section */
-
-    .third-section-text {
-      margin: 10px;
-      margin-right: 90px;
-      padding: 35px;
-      padding-right: 50px;
-    }
-
-    .third-section-text h3 {
-      margin: 10px;
-      margin-right: 90px;
-      padding-right: 50px;
-      padding-left: 80px;
-      text-align: center;
-    }
-
-    .welcome-container {
-      align-items: center;
-      padding-bottom: 20px;
-    }
-
-
-  /* Footer adjustments */
-
-    .footer-section {
-      padding-right: 200px
-    }
-
-  .footer-list, .footer-social-media-icons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .icon, .footer-list-item {
-    margin-bottom: 10px;
-  }
-
-  .footer-copywright {
-    text-align: center;
-    padding: 10px;
-  }
 } 
 
