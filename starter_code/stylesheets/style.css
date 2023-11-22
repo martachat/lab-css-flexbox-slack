@@ -388,7 +388,75 @@ html {
 
 /* Small Screens (width > 768px and width < 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Styles for small screens */
+  .navbar-menu, .nav-bottom-sign, .nav-bottom-link-try {
+    display: none;
+  }
+
+  .header-container {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 0px;
+  }
+
+  .text-container p {
+    font-size: 28px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center stretch;
+    width: 700px; 
+    height: auto;
+  }
+
+  .email-button {
+    display: block; 
+    width: 80%; 
+    margin-bottom: 10px; 
+    padding: 10px 20px; 
+    font-size: 24px; 
+    border: none; 
+    border-radius: 4px; 
+    text-align: center; 
+  }
+
+   .google-button {
+    display: block; 
+    width: 80%; 
+    margin-bottom: 10px; 
+    padding: 10px 20px; 
+    font-size: 24px; 
+    border: none; 
+    border-radius: 4px; 
+    text-align: center; 
+  }
+
+
+  .email-button a {
+    color: #540B51; 
+  }
+
+  .google-button img {
+    width: 50px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-right: 10px;
+  }
+
+  .welcome-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center stretch;
+    height: auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .welcome-button-free, .welcome-button-sales {
+    font-size: 18px;
+  }
+
 }
 
 /* Mobile Screens (width < 768px) */
