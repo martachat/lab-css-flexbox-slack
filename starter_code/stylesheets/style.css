@@ -376,16 +376,6 @@ html {
 
 
 /* ===== Media Queries Section ===== */
-/* Styles for devices with a width less than 768px */
-@media only screen and (max-width: 767px) {
-  /* Your styles here */
-}
-
-/* Styles for devices with a width greater than 768px and less than 1024px */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Your styles here */
-}
-
 /* Styles for devices with a width greater than 1024px and less than 1440px */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   /* Your styles here */
