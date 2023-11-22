@@ -374,13 +374,25 @@ html {
    padding: 0px 0px 0px 32px;
 }
 
+
 /* ===== Media Queries Section ===== */
-/* Media queries should be coded as it follows: 
-    @media (min-width: 1400px) - Extra extra large - Tablet - iPad Mini
-    @media (min-width: 1200px) and (max-width: 1399px) - Extra large - Large mobile device - iPhone 12 Pro Max
-    @media (min-width: 992px) and (max-width: 1199px) - Large - Standard mobile device - Samsung Galaxy S5
-    @media (min-width: 768px) and (max-width: 991px) - Medium - Small mobile device - iPhone SE
-    @media (min-width: 576px) and (max-width: 767px) - Small - Standard mobile device - iPhone 8
-    @media (max-width: 575px) - X-Small - Small mobile device - older smartphone
-*/
+/* Styles for devices with a width less than 768px */
+@media only screen and (max-width: 767px) {
+  /* Your styles here */
+}
+
+/* Styles for devices with a width greater than 768px and less than 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Your styles here */
+}
+
+/* Styles for devices with a width greater than 1024px and less than 1440px */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  /* Your styles here */
+}
+
+/* Styles for devices with a width greater than 1440px */
+@media only screen and (min-width: 1440px) {
+  /* Your styles here */
+}
 /* Add your media query styles here... */
