@@ -1,6 +1,112 @@
 /* ===== Media Queries Section ===== */
 /* Styles for devices with a width less than 768px */
-@media only screen and (max-width: 767px) {
-    /* Your styles here */
+@media only screen and (max-width: 768px) {
+
+
+  .navbar {
+    display: flex;
   }
-  
+
+  .navbar-logo {
+    display: flex;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .nav-bottom-links {
+    display: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-main-text {
+    font-size: 44px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-second-text {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px
+  }
+
+  .email-button a {
+    text-align: center;
+    justify-content: center;
+  }
+ 
+  .header-app-image {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .first-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 3rem 0;
+  }
+
+  .first-section-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px
+  }
+
+  .second-section-text h3, p {
+    display: flex;
+    align-items: center;
+  }
+
+  .percentages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .third-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer-social-media-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-copywright {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

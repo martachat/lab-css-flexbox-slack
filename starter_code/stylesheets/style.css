@@ -10,6 +10,7 @@
 */
 
 /* ===== Base Styles ===== */
+
 html {
   font-size: 24px;
   background-color: #540B51;
@@ -69,6 +70,10 @@ html {
   font-size: 24px; 
   margin-right: 10px;
   text-decoration: none;
+}
+
+.menu-button {
+  display: none;
 }
 
 .thin-line {
@@ -374,15 +379,18 @@ html {
    padding: 0px 0px 0px 32px;
 }
 
-
-/* ===== Media Queries Section ===== */
-/* Styles for devices with a width greater than 1024px and less than 1440px */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  /* Your styles here */
+.welcome-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-/* Styles for devices with a width greater than 1440px */
-@media only screen and (min-width: 1440px) {
-  /* Your styles here */
+.footer-list{
+  display: flex;
 }
-/* Add your media query styles here... */
+
+  
+
+
+
+
