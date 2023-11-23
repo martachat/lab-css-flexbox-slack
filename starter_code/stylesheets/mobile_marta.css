@@ -2,7 +2,6 @@
 /* Styles for devices with a width less than 768px */
 @media only screen and (max-width: 768px) {
 
-
   .navbar {
     display: flex;
   }

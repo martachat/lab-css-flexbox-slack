@@ -1,4 +1,148 @@
   /* Styles for devices with a width greater than 768px and less than 1024px */
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Your styles here */
+    
+    .navbar {
+      display: flex;
+    }
+  
+    .navbar-logo {
+      display: flex;
+    }
+  
+    .navbar-menu {
+      display: none;
+    }
+  
+    .menu-button {
+      display: flex;
+    }
+  
+    .nav-bottom-links {
+      display: none;
+    }
+  
+    hr {
+      display: none;
+    }
+  
+    .header-container {
+      flex-direction: left;
+    }
+  
+    .header-main-text {
+      font-size: 44px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .header-second-text {
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .email-button a {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .google-button {
+      text-align: center;
+      justify-content: center;
+    }
+   
+    .hero-container {
+      width: 100%; 
+      height: auto; 
+      overflow: hidden;
+    }
+  
+    .first-section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 3rem 0;
+    }
+
+    .first-section-text {
+      font-size: 18px;
+    }
+  
+    .first-section-logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: no-wrap;
+      gap: 10px
+    }
+  
+    .second-section-text .h3, .p {
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+    }
+  
+    .percentages {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    .information {
+      font-size: 24px;
+    }
+  
+    .third-section-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .welcome-container {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+ 
+    }
+  
+    .welcome-button-free, .welcome-button-sales {
+      text-align: center;
+      justify-content: center;
+      width: 600px;
+      font-size: 24px;
+    }
+   
+    .footer-list {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      
+    }
+  
+    .footer-social-media-icons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: left;
+
+    }
+
+    .icon {
+      margin-right: 50px;
+    }
+  
+    .footer-copywright {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
